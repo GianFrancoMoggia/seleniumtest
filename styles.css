@@ -1,0 +1,29 @@
+body{
+    background-color:beige;
+}
+
+nav{
+    background-color:blanchedalmond;
+}
+
+#form{
+    background-color: bisque;
+    display: grid;
+    place-items: center;
+    margin: auto;
+    width: 30%;
+    height:350px;
+    padding: 10px;
+}
+
+input{
+    width:100%
+}
+
+h4{
+    margin-bottom: 5px;
+}
+
+button{
+    margin-top: 20px;
+}
