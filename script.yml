@@ -11,17 +11,17 @@ jobs:
           username: ${{ secrets.BROWSERSTACK_USERNAME}}
           access-key: ${{ secrets.BROWSERSTACK_ACCESS_KEY}}
       - name: 'BrowserStack Local Tunnel Setup'
-        uses: browsterstack/github-actions/setup-local@master
+        uses: browserstack/github-actions/setup-local@master
         with:
           local-testing: start
           local-identifier: random
-      - name: 'Checkout the repository'
+      - name: "xd"
         uses: actions/checkout@v2
       - name: 'Install the dependencies'
         run: pip install selenium
       - name: 'Running test on BrowserStack'
         run: python main.py
       - name: 'BrowserStackLocal Stop'
-        uses: broserstack/github-actions/setup-local@master
+        uses: browserstack/github-actions/setup-local@master
         with: 
           local-testing: stop
