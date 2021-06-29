@@ -9,14 +9,14 @@ jobs:
         uses: browserstack/github-actions/setup-env@master
         with:
           username: ${{ secrets.BROWSERSTACK_USERNAME}}
-          access_key: ${{ secrets.BROWSERSTACK_ACCESS_KEY}}
+          access-key: ${{ secrets.BROWSERSTACK_ACCESS_KEY}}
       - name: 'BrowserStack Local Tunnel Setup'
         uses: browsterstack/github-actions/setup-local@master
         with:
           local-testing: start
           local-identifier: random
       - name: 'Checkout the repository'
-        uses: GianFrancoMoggia/seleniumtest@master
+        uses: actions/checkout@v2
       - name: 'Install the dependencies'
         run: pip install selenium
       - name: 'Running test on BrowserStack'
