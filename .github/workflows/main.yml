@@ -20,7 +20,7 @@ jobs:
       - name: 'Instalar las dependencias'
         run: pip install selenium
       - name: 'Prueba de BrowserStack'
-        run: python pageTest.py
+        run: python main.py
       - name: 'BrowserStackLocal Stop'
         uses: browserstack/github-actions/setup-local@master
         with: 
