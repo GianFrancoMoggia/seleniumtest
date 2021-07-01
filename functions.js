@@ -1,4 +1,3 @@
-
 var mail;     
 var username;
 var password;
